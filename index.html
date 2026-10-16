@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Little Surprise 💕</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="password-page">
+
+    <div class="hearts-bg"></div>
+
+    <div class="password-card">
+
+        <div class="password-image-box">
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgZ2HjK9aJynA--glfm4YfWk93FjyXrgjuYu0ln8QXpQ&s=10"
+                alt="Cute kitten"
+            >
+        </div>
+        <audio id="bgMusic" loop>
+        <source src="the_mountain-happy-birthday-508020.mp3" type="audio/mpeg">
+    </audio>
+
+        <div class="password-content">
+
+            <p class="small-text">✨ A little surprise awaits ✨</p>
+
+            <h1>Hey You! 💕</h1>
+
+            <p>
+                There's something special waiting for you...
+            </p>
+
+            <p class="question">
+                Enter the secret password 🔐
+            </p>
+
+            <div class="password-box">
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter password..."
+                    onkeypress="handleEnter(event)"
+                >
+
+                <button onclick="checkPassword()">
+                    Unlock 💖
+                </button>
+            </div>
+
+            <p id="error"></p>
+
+            <div class="tiny-hearts">
+                ♡ ♥ ♡ ♥ ♡
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

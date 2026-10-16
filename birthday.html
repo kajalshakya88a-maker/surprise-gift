@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday 🎂</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="birthday-page">
+
+    <!-- Balloons yahan automatically generate honge -->
+    <div id="balloon-container"></div>
+
+    <!-- Background Music -->
+    <audio id="bgMusic" loop>
+        <source src="the_mountain-happy-birthday-508020.mp3" type="audio/mpeg">
+    </audio>
+
+    <button class="music-button" onclick="toggleMusic()">
+        🎵 Music
+    </button>
+
+    <main class="birthday-content">
+
+        <p class="top-love">✨ Today is your special day ✨</p>
+
+        <h1 class="birthday-title">
+            Happy Birthday
+            <span>🎂</span>
+        </h1>
+
+        <h2 class="name-title">
+            To Someone Very Special 💕
+        </h2>
+
+        <div class="main-photo">
+            <img
+                src="data:image/jpeg;base64,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"
+                alt="Cute kitten"
+            >
+        </div>
+
+        <p class="scroll-text">
+            ↓ Scroll down for your messages ↓
+        </p>
+
+        <!-- Message 1 -->
+        <section class="message reveal">
+            <span>💌</span>
+            <h2>Dear You...</h2>
+            <p>
+                Today is all about celebrating the wonderful person you are.
+                May your day be filled with happiness, smiles and lots of love. ❤️
+            </p>
+        </section>
+
+        <!-- Message 2 -->
+        <section class="message reveal">
+            <span>🌸</span>
+            <h2>A Little Wish...</h2>
+            <p>
+                I hope every dream you have slowly turns into reality.
+                May every new day bring something beautiful into your life. ✨
+            </p>
+        </section>
+
+        <!-- Message 3 -->
+        <section class="message reveal">
+            <span>🥹</span>
+            <h2>And One More Thing...</h2>
+            <p>
+                Keep smiling, keep shining and always stay the amazing person
+                you are. You deserve all the beautiful things in this world. 💗
+            </p>
+        </section>
+
+        <!-- Message 4 -->
+        <section class="message reveal">
+            <span>🎀</span>
+            <h2>Finally...</h2>
+            <p>
+                This little website is just a small surprise,
+                but the wish behind it is very big. ❤️
+            </p>
+        </section>
+
+        <div class="next-section">
+            <button onclick="location.href='memories.html'" class="next-button">
+                Continue to Memories 📸
+            </button>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

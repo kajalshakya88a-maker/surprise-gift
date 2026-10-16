@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Memories 📸</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="memories-page">
+
+    <div class="memory-background-hearts">
+        ♡
+    </div>
+    <audio id="bgMusic" loop>
+        <source src="the_mountain-happy-birthday-508020.mp3" type="audio/mpeg">
+    </audio>
+    <main class="memories-content">
+
+        <p class="small-text">✨ A little trip down memory lane ✨</p>
+
+        <h1>
+            Our Memories 📸
+        </h1>
+
+        <p class="memory-subtitle">
+            One beautiful moment at a time... ❤️
+        </p>
+
+        <div class="memory-photo-wrapper">
+
+            <img
+                id="memoryPhoto"
+                class="memory-photo"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF0lic06BvoHTfVNFVAjffRfOebLbfU6PNhz0ZPge2IA&s"
+                alt="Memory"
+            >
+
+        </div>
+
+        <p id="memoryNumber" class="memory-number">
+            Memory 1 / 6
+        </p>
+
+        <p id="memoryCaption" class="memory-caption">
+            A cute little memory 💕
+        </p>
+
+        <div class="memory-controls">
+
+            <button onclick="previousPhoto()" class="small-button">
+                ←
+            </button>
+
+            <button onclick="nextPhoto()" class="small-button">
+                →
+            </button>
+
+        </div>
+
+        <p class="auto-text">
+            ✨ Memories are changing automatically ✨
+        </p>
+
+        <button
+            onclick="location.href='surprise.html'"
+            class="next-button"
+        >
+            Final Surprise 🎁
+        </button>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
